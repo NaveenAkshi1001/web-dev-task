@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Member Team</title>
+    <link rel="stylesheet" href="designed-1.css">
+</head>
+<body>
+    <header>
+        <h1>Meet Our Amazing Team</h1>
+    </header>
+    
+    <main>
+        <div id="member1" class="team-member" onclick="toggleDetails('member1')">
+            <img src="member1.jpg" alt="Member 1">
+            <div class="member-details">
+                <h2>Naveen Akshi D</h2>
+                <div class="details hidden">
+                    <p>Position: Team Lead</p>
+                    <p>Employee ID: VT1001</p>
+                    <p>Age: 25</p>
+                    <p>Gender: Male</p>
+                    <p>Email: naveen@gmail.com</p>
+                    <p>Joining Date: April 2, 2024</p>
+                </div>
+            </div>
+        </div>
+   
+        <div id="member2" class="team-member" onclick="toggleDetails('member2')">
+            <img src="member1.jpg" alt="Member 2">
+            <div class="member-details">
+                <h2>Alwin</h2>
+                <div class="details hidden">
+                    <p>Position: Front End Developer</p>
+                    <p>Employee ID: VT1010</p>
+                    <p>Age: 23</p>
+                    <p>Gender: Male</p>
+                    <p>Email: alwin@example.com</p>
+                    <p>Joining Date: January 1, 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="member3" class="team-member" onclick="toggleDetails('member3')">
+            <img src="member1.jpg" alt="Member 3">
+            <div class="member-details">
+                <h2>Bharath</h2>
+                <div class="details hidden">
+                    <p>Position: Back End Developer</p>
+                    <p>Employee ID: VT3101</p>
+                    <p>Age: 28</p>
+                    <p>Gender: Male</p>
+                    <p>Email: bharath@example.com</p>
+                    <p>Joining Date: January 1, 2024</p>
+                </div>
+            </div>
+        </div>
+
+       <div id="member4" class="team-member" onclick="toggleDetails('member4')">
+            <img src="member1.jpg" alt="Member 4">
+            <div class="member-details">
+                <h2>Ashik</h2>
+                <div class="details hidden">
+                    <p>Position: Quality Analyst</p>
+                    <p>Employee ID: VT2356</p>
+                    <p>Age: 24</p>
+                    <p>Gender: Male</p>
+                    <p>Email: ashik@example.com</p>
+                    <p>Joining Date: January 1, 2023</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="member5" class="team-member" onclick="toggleDetails('member5')">
+            <img src="member1.jpg" alt="Member 5">
+            <div class="member-details">
+                <h2>Kishore</h2>
+                <div class="details hidden">
+                    <p>Position: Devops Engineer</p>
+                    <p>Employee ID: VT2010</p>
+                    <p>Age: 25</p>
+                    <p>Gender: Male</p>
+                    <p>Email: kishore@example.com</p>
+                    <p>Joining Date: January 1, 2020</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="member6" class="team-member" onclick="toggleDetails('member6')">
+            <img src="member1.jpg" alt="Member 6">
+            <div class="member-details">
+                <h2>Udhayakumar </h2>
+                <div class="details hidden">
+                    <p>Position: Support Engineer</p>
+                    <p>Employee ID: VT0101</p>
+                    <p>Age: 24</p>
+                    <p>Gender: Male</p>
+                    <p>Email: udhai@example.com</p>
+                    <p>Joining Date: February 1, 2020</p>
+                </div>
+            </div>
+        </div>
+                
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+<script>
+        function toggleDetails(memberId) {
+            var details = document.getElementById(memberId).querySelector('.details');
+            details.classList.toggle('active');
+        }
+</script>
+</body>
+</html>
